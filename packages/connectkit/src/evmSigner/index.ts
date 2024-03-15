@@ -45,8 +45,7 @@ export class AASignerProvider {
       arg.method === 'eth_sendTransaction' ||
       arg.method === 'wallet_addEthereumChain' ||
       arg.method === 'wallet_watchAsset' ||
-      arg.method === 'eth_sign' ||
-      arg.method.startsWith('eth_signTypedData')
+      arg.method === 'eth_sign'
     ) {
       throw new UnsupportedProviderMethodError(new Error('The Provider does not support the requested method.'));
     }

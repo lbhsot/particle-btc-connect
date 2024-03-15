@@ -2,3 +2,4 @@ node_modules/
 .vercel
 deployDevelopment.sh
 deployProduction.sh
+.idea/
